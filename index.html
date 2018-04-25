@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>辉叔的个人简历</title>
+    <link rel="stylesheet" href="./a.css">
+    <meta charset='utf-8'>
+   <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <script src="https://at.alicdn.com/t/font_610574_gazw9uqw1km7k3xr.js"></script>
+    <script src="//cdn1.lncld.net/static/js/3.6.7/av-min.js"></script>
+    <style>
+          .icon {
+       width: 1em; height: 1em;
+       vertical-align: -0.15em;
+       fill: currentColor;
+       overflow: hidden;
+    }
+    .siteWelcome{
+    	display: none;
+    	justify-content: center;
+    	align-items: center;
+    	position: fixed;
+    	width: 100%;
+    	height: 100%;
+    	top: 0;
+    	left: 0;
+    	background: #888;
+    	z-index: 1;
+    }
+    .siteWelcome.active {
+        display: flex;
+    }
+       .loading{
+       	width: 200px;
+       	height: 200px;
+       	position: relative;
+       }
+      .loading::before,.loading::after {
+       	content: '';
+       	position: absolute;
+       	width: 10px;
+       	height: 10px;
+       	border-radius: 50%;
+       	background: #3f3;
+       	top: 0;
+       	left: 0;
+       	right: 0;
+       	bottom:0;
+       	margin: auto;
+       	animation: s 1.5s linear infinite;
+       }
+       .loading::after{
+       	animation-delay: 0.75s
+       }
+       @keyframes s{
+       	0%{
+       		width: 0px;height: 0px;opacity: 1;
+       	}
+       	100%{width:100px;height:100px;opacity: 0;}
+       }
+       .post {
+       	margin: 200px auto;
+       	text-align: center;
+       	
+       }
+
+         .post ol {
+        	max-width: 500px;
+        	margin: 0 auto;
+        	border-top: 1px solid #ddd;
+        	
+        }
+         .post ol  li{
+        	padding: 16px;
+        	border-bottom: 1px solid #ddd;
+        }
+  </style>
+  </head>
+  <body>
+  	<div id='siteWelcome' class="siteWelcome">
+  	 <div class="loading"></div>
+  </div>
+    <div id='topNavBar' class="topNavBar">
+        <div class="topNavBar-inner clearfix">
+                   <a class="logo" href="#" alt="logo" style="float:left">
+        <span class="rs">RS</span><span class="card">card</span>
+      </a>
+      <nav style="float:right">
+        <ul class="clearfix" >
+          <li>
+          	<a href="#">关于</a>
+          </li>
+          <li>
+          	<a href="#">技能</a>
+          </li>
+          <li>
+          	<a href="#">作品</a>
+          </li>
+          <li>
+          	<a href="#">博客</a>
+          </li>
+          <li>
+          	<a href="#">联系方式</a>
+          </li>
+          <li>
+          	<a href="#">其他</a>
+          </li>
+        </ul>
+      </nav>
+        </div>
+    </div>
+    <div class="banner">
+       <div class="mask"></div>
+    </div>
+    <main style="margin-top:-360px;">
+      <div class="userCard ">
+        <div class="pictureAndText clearfix">
+          <div class="picture">
+            <img src="./img/avatar.jpg" alt="头像">
+          </div>
+          <div class="text">
+            <div class="profile">
+              <span class="welcome">HELLO
+                <span class='triangle'></span>
+              </span>
+              <h1> <span>I'm</span>Robert Smith</h1>
+              <p>Developer and Startup entrepreneur</p>
+              <hr>
+              <dl >
+                <dt>年龄</dt>
+                <dd>18</dd>
+                <dt>所在城市</dt>
+                <dd>北京</dd>
+                <dt>邮箱</dt>
+                <dd>youkiplus@gmail.com</dd>
+                <dt>手机</dt>
+                <dd>152****5984</dd>
+              </dl>
+            </div>
+          </div>
+        </div>
+        <footer class="media">
+          <a href="#">
+            <svg class="icon" aria-hidden="true">
+               <use xlink:href="#icon-google"></use>
+            </svg>
+          </a>
+          <a href="#">
+            <svg class="icon" aria-hidden="true">
+               <use xlink:href="#icon-github"></use>
+            </svg>
+          </a>
+          <a href="#">
+            <svg class="icon" aria-hidden="true">
+               <use xlink:href="#icon-twitter"></use>
+            </svg>
+          </a>
+        </footer>
+      </div>
+
+      <p style="text-align:center" class='button'>
+          <a class="download" href="./resume.pdf" download>下载 PDF 简历</a>
+      </p>
+
+      <p class="selfIntroduction">
+        Youki， 前端工程师，喜欢芥川龙之介，叔本华，马斯洛，跑过两次半程马拉松。<br>
+        技能：HTML、CSS、JavaScript、Photoshop切图
+      </p>
+    </main>
+    <section class='skills'>
+      <h2 class='title'>Professional  Skills</h2>
+      <ol class='clearfix'>
+        <li>
+          <h3>HTML 5 &amp; CSS 3</h3>
+          <div class="progressBar">
+            <div class="progress" style="width: 80%;"></div>
+          </div>
+        </li>
+        <li>
+          <h3>JavaScript</h3>
+          <div class="progressBar">
+            <div class="progress" style="width: 60%;"></div>
+          </div>
+        </li>
+        <li>
+          <h3>jQuery</h3>
+            <div class="progressBar">
+              <div class="progress" style="width: 88%;"></div>
+          </div>
+        </li>
+        <li>
+          <h3>Vue</h3>
+        <div class="progressBar">
+            <div class="progress" style="width: 92%;"></div>
+          </div>
+        </li>
+        <li>
+          <h3>React</h3>
+            <div class="progressBar">
+              <div class="progress" style="width: 80%;"></div>
+          </div>
+        </li>
+        <li>
+          <h3>HTTP</h3>
+          <div class="progressBar">
+             <div class="progress" style="width: 77%;"></div>
+          </div>
+        </li>
+      </ol>
+    </section>
+    <section class='portfolio'>
+      <h2 class='title'>Portfolio</h2>
+        <nav>
+           <ol class='clearfix'>
+              <li id='portfolio1'>All</li>
+              <li id='portfolio2'>框架</li>
+              <li id='portfolio3'>JavaScript</li>
+           </ol>
+           <div id='portfolioBar' class="bar state-1"><div class="bar-inner "></div></div>
+        </nav>
+        <script>
+            portfolio1.onclick = function(){
+              portfolioBar.className='bar state-1';
+            }
+            portfolio2.onclick = function(){
+              portfolioBar.className='bar state-2';
+            }
+            portfolio3.onclick = function(){
+              portfolioBar.className='bar state-3';
+            }
+        </script>
+      <div class="jobs">
+        <div class="big" style='top:0;left:0;'>
+          <img src="./img/1.jpg" alt="1">
+        </div>
+        <div class="small" style='top:0;left:645px;'>
+            <img src="./img/2.jpg" alt="">
+        </div>
+        <div class="small" style='top:302px;left:645px;'>
+          <img src="./img/3.jpg" alt="">
+        </div>
+      </div>
+    </section>
+        <section>
+              <div class="post clearfix">
+              <h2>留言</h2>
+              <ol id='messageList'></ol>
+                <form id='messageForm'>
+                	<label for="Name">Name</label>
+                	 <input type="text" name='name'>
+                	
+                	<label for="Name">Content</label>
+                	<input type="text" name='content'>
+                	
+                  <input type="submit" value='submit'>
+             </form>
+              
+         </div>
+        </section>
+    <script>
+    	/*loding animation*/
+/*        setTimeout(function(){
+        	siteWelcome.classList.remove('active');
+        },3000)*/
+
+        window.onscroll = function(){
+         window.scrollY>0?topNavBar.classList.add('sticky'):topNavBar.classList.remove('sticky');
+        	
+        }
+    </script>
+    <script src="./script/av.js"></script>
+  </body>
+</html>
