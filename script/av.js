@@ -24,15 +24,16 @@ AV.init({
     console.log('failed');
   });
 
-console.log('no error');
     var message = document.querySelector('#messageForm');
         message.addEventListener('submit',function(e){
-       e.preventDefault();
-      let content =  message.querySelector('input[name=content]').value;
+        e.preventDefault();
+
+       let content =  message.querySelector('input[name=content]').value;
       let name =  message.querySelector('input[name=name]').value;
       let xxx = AV.Object.extend('Message');
       let test = new xxx();
-      test.save({
+        if(name !== '' && content !== ''){
+        	test.save({
       	'content': content,
       	'name': name
       }).then(function(obj){
@@ -43,9 +44,13 @@ console.log('no error');
       	message.querySelector('input[name=name]').value = '';
       	message.querySelector('input[name=content]').value = '';
       })
+  }else{
+  	 alert('(づ￣3￣)づ╭❤～O(∩_∩)O哈哈~Name and Content can not be null！')
+  }
   })
 /*var xxx = AV.Object.extend('Youki');//创建test
-var test = new xxx();//创建新数据
+var test = new xxx();//
+
 test.save({//存储新数据
   words: 'youki 666!'
 }).then(function(object) {//保存成功则alert.
