@@ -1,0 +1,51 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  height: 100vh;
+}
+#code{
+  flex: 1;
+  height: 100vh;
+  overflow: auto;
+  padding: 40px 0 0 40px;
+}
+.actions{
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+}
+.actions button {
+  margin: 10px;
+  border: none;
+  background: #ddd;
+  padding: 10px 8px;
+  background: #ddd;
+}
+.actions button > .active {
+  box-shadow: 1px 1px 3px rgba(0,0,0,0.8)
+}
+.pikachu-wrapper {
+  flex: 1;
+  position: relative;
+  right: 0;
+  background: #FFE600;
+  font-size: 100px;
+}
+.token.selector {
+    color: black;
+}
+.token.property{
+  color: black;
+}
+.token.function {
+    color: black;
+}
+  

@@ -28,7 +28,6 @@
 
                 #code {
                    position: fixed;
-                   transform: rotateY(45deg);
                    left: 0;
                    width: 50%;
                    height: 100%;
